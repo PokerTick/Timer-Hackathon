@@ -160,7 +160,11 @@ function App() {
             </button>
             <button
               id="pauseBtn"
-              className="px-6 py-3 bg-gradient-to-r from-[#8a64d6] to-[#729efd] text-white font-bold rounded-full uppercase tracking-wide text-sm transition-all duration-300 hover:from-orange-600 hover:to-orange-700 hover:scale-105 hover:shadow-lg hover:shadow-orange-500/25 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 min-w-[100px] opacity-90"
+              className={`px-6 py-3 bg-gradient-to-r from-[#8a64d6] to-[#729efd] text-white font-bold rounded-full uppercase tracking-wide text-sm transition-all duration-300 min-w-[100px] ${
+              isRunning
+                ? 'hover:from-orange-600 hover:to-orange-700 hover:scale-105 hover:shadow-lg hover:shadow-orange-500/25 opacity-90 '
+                : 'opacity-50 cursor-not-allowed'
+              }`}
               onClick={handlePause}
               disabled={!isRunning}
             >
