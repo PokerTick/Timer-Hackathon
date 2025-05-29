@@ -1,7 +1,7 @@
-import './index.css'
-import BG from "./assets/background.svg"
-import React, { useState, useRef } from 'react'
-import alarmSound from './assets/alarm_wake_up.mp3'
+import './index.css';
+import BG from "./assets/background.svg";
+import React, { useState, useRef } from 'react';
+import alarmSound from './assets/alarm_wake_up.mp3';
 
 function App() {
   const [hours, setHours] = useState(0)
