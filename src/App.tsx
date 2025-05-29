@@ -152,7 +152,7 @@ function App() {
           <div className="flex flex-col sm:flex-row gap-3 justify-center mb-6">
             <button
               id="startBtn"
-              className="px-6 py-3 bg-gradient-to-r from-green-500 to-green-600 text-white font-bold rounded-full uppercase tracking-wide text-sm transition-all duration-300 hover:from-green-600 hover:to-green-700 hover:scale-105 hover:shadow-lg hover:shadow-green-500/25 min-w-[100px]"
+              className="px-6 py-3 bg-gradient-to-r from-[#729efd] to-[#8a64d6] text-white font-bold rounded-full uppercase tracking-wide text-sm transition-all duration-300 hover:from-green-600 hover:to-green-700 hover:scale-105 hover:shadow-lg hover:shadow-green-500/25 min-w-[100px] opacity-90"
               onClick={handleStart}
               disabled={isRunning || remaining === 0}
             >
@@ -160,7 +160,7 @@ function App() {
             </button>
             <button
               id="pauseBtn"
-              className="px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-bold rounded-full uppercase tracking-wide text-sm transition-all duration-300 hover:from-orange-600 hover:to-orange-700 hover:scale-105 hover:shadow-lg hover:shadow-orange-500/25 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 min-w-[100px]"
+              className="px-6 py-3 bg-gradient-to-r from-[#8a64d6] to-[#729efd] text-white font-bold rounded-full uppercase tracking-wide text-sm transition-all duration-300 hover:from-orange-600 hover:to-orange-700 hover:scale-105 hover:shadow-lg hover:shadow-orange-500/25 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 min-w-[100px] opacity-90"
               onClick={handlePause}
               disabled={!isRunning}
             >
@@ -168,7 +168,7 @@ function App() {
             </button>
             <button
               id="resetBtn"
-              className="px-6 py-3 bg-gradient-to-r from-red-500 to-red-600 text-white font-bold rounded-full uppercase tracking-wide text-sm transition-all duration-300 hover:from-red-600 hover:to-red-700 hover:scale-105 hover:shadow-lg hover:shadow-red-500/25 min-w-[100px]"
+              className="px-6 py-3 bg-gradient-to-r from-[#729efd] to-[#8a64d6] text-white font-bold rounded-full uppercase tracking-wide text-sm transition-all duration-300 hover:from-red-600 hover:to-red-700 hover:scale-105 hover:shadow-lg hover:shadow-red-500/25 min-w-[100px] opacity-90"
               onClick={handleReset}
             >
               Reset
